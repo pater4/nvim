@@ -1,0 +1,80 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'Shougo/vimproc.vim'
+hook_post_update = '''
+  if dein#util#_is_windows()
+    let cmd = 'tools\\update-dll-mingw'
+  elseif dein#util#_is_cygwin()
+    let cmd = 'make -f make_cygwin.mak'
+  elseif executable('gmake')
+    let cmd = 'gmake'
+  else
+    let cmd = 'make'
+  endif
+  let g:dein#plugin.build = cmd
+'''
+
+[[plugins]]
+repo = 'thinca/vim-quickrun'
+hook_post_update = '''
+  let g:quickrun_config = {'*': {'hook/time/enable': '1'},}
+'''
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+hook_add = 'let g:deoplete#enable_at_startup = 1'
+
+[[plugins]]
+repo = 'cespare/vim-toml'
+
+[[plugins]]
+repo = 'tomasr/molokai'
+
+[[plugins]]
+repo = 'Shougo/denite.nvim'
+hook_add = '''
+source ~/.config/nvim/plugins/denite.rc.vim
+'''
+
+[[plugins]]
+repo = 'easymotion/vim-easymotion'
+hook_add = '''
+source ~/.config/nvim/plugins/vim-easymotion.rc.vim
+'''
+
+[[plugins]]
+repo = 'Lokaltog/vim-powerline.git'
+
+[[plugins]]
+repo = 'nathanaelkane/vim-indent-guides'
+hook_add = '''
+source ~/.config/nvim/plugins/vim-indent-guides.rc.vim
+'''
+
+[[plugins]]
+repo = 'neomake/neomake'
+if = "has('nvim')"
+hook_add = '''
+source ~/.config/nvim/plugins/neomake.rc.vim
+'''
+
+[[plugins]]
+repo = 'kassio/neoterm'
+if = "has('nvim')"
+hook_add = '''
+source ~/.config/nvim/plugins/neoterm.rc.vim
+'''
+
+[[plugins]]
+repo = 'Shougo/unite.vim'
+
+[[plugins]]
+repo = 'Shougo/vimfiler'
+hook_add = '''
+source ~/.config/nvim/plugins/vimfiler.rc.vim
+'''
+
+[[plugins]]
+repo = 'kchmck/vim-coffee-script'
