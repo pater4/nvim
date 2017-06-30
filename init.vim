@@ -35,8 +35,8 @@ if dein#check_install()
   call dein#install()
 endif
 
-let g:python2_host_prog = '/usr/local/bin/python'
-let g:python3_host_prog = '/usr/local/bin/python3'
+let g:python2_host_prog = '/usr/bin/python'
+let g:python3_host_prog = '/usr/bin/python3'
 set clipboard=unnamed
 set noswapfile
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
