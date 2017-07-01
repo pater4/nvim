@@ -138,3 +138,4 @@ hi IndentGuidesOdd  ctermbg=24
 hi IndentGuidesEven ctermbg=22
 hi Normal         ctermbg=none
 hi Visual         ctermfg=224 ctermbg=60
+hi MatchParen cterm=bold ctermfg=208 ctermbg=233
