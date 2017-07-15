@@ -60,12 +60,12 @@ hook_add = '''
 source ~/.config/nvim/plugins/neomake.rc.vim
 '''
 
-# [[plugins]]
-# repo = 'kassio/neoterm'
-# if = "has('nvim')"
-# hook_add = '''
-# source ~/.config/nvim/plugins/neoterm.rc.vim
-# '''
+[[plugins]]
+repo = 'kassio/neoterm'
+if = "has('nvim')"
+hook_add = '''
+source ~/.config/nvim/plugins/neoterm.rc.vim
+'''
 
 # [[plugins]]
 # repo = 'Shougo/unite.vim'
