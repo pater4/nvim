@@ -16,3 +16,5 @@ nnoremap <silent> ,tc :call neoterm#kill()<cr>
 
 " Git commands
 command! -nargs=+ Tg :T git <args>
+
+let g:neoterm_autoscroll = 1

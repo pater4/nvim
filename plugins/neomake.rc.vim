@@ -19,3 +19,5 @@ let g:neomake_message_sign = {
      \   'texthl': 'NeomakeMessageSign',
      \ }
 let g:neomake_info_sign = {'text': 'ℹ➤', 'texthl': 'NeomakeInfoSign'}
+
+let g:neomake_php_phpcs_args_standard = 'PSR2'
