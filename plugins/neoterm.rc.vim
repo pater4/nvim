@@ -18,3 +18,4 @@ nnoremap <silent> ,tc :call neoterm#kill()<cr>
 command! -nargs=+ Tg :T git <args>
 
 let g:neoterm_autoscroll = 1
+let g:neoterm_position = "vertical"

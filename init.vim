@@ -85,8 +85,13 @@ let g:netrw_alto = 1
 let g:netrw_altv = 1
 let g:netrw_banner = 0
 let g:netrw_winsize = 10
-let g:netrw_liststyle = 3
+let g:netrw_liststyle = 1
 let g:netrw_browse_split = 0
+" Shift + 矢印でウィンドウサイズを変更
+nnoremap fh <C-w><
+nnoremap fl <C-w>>
+nnoremap fk <C-w>-
+nnoremap fj <C-w>+
 
 " 行番号を非表示 (number:表示)
 set number
