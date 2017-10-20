@@ -126,9 +126,13 @@ set hidden
 au BufRead,BufNewFile,BufReadPre *.java   set filetype=java
 autocmd FileType java    setlocal sw=2 sts=2 ts=2 noexpandtab
 
-" javaの設定
+" coffeeの設定
 au BufRead,BufNewFile,BufReadPre *.coffee   set filetype=coffee
 autocmd FileType coffee    setlocal sw=2 sts=2 ts=2 expandtab
+
+" phpの設定
+au BufRead,BufNewFile,BufReadPre *.php   set filetype=php
+autocmd FileType php    setlocal sw=4 sts=4 ts=4 expandtab
 
 "Setting the keymap
 noremap <C-k> <ESC>

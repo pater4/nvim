@@ -5,9 +5,9 @@ nmap <C-f> [unite]
 xmap <C-f> [unite]
 
 "バッファ一覧
-nmap <silent> fs :<C-u>Denite -refresh -highlight-mode-insert=Search buffer<CR>
-nmap <silent> fv :<C-u>Denite -refresh -highlight-mode-insert=Search file_rec:
-nmap <silent> fo :<C-u>Denite -refresh -highlight-mode-insert=Search outline<CR>
+nmap <silent> fs :<C-u>Denite -refresh -highlight-mode-insert=Visual buffer<CR>
+nmap <silent> fv :<C-u>Denite -refresh -highlight-mode-insert=Visual file_rec:
+nmap <silent> fo :<C-u>Denite -refresh -highlight-mode-insert=Visual outline<CR>
 
 call denite#custom#map(
       \ 'insert',
